@@ -1,5 +1,7 @@
-export default menuObj = [{
-    'Vue升级的功能': [{
-        'creatApp': []
-    }]
-}]
+export default {
+    'Vue3': {
+        'Vue升级的功能': {
+            'creatApp': {}
+        }
+    }
+}
