@@ -1,20 +1,22 @@
 <template>
-  <div>{{name}} {{age}}</div>
+  {{messager.messages}}
+  <button @click="sendMessage">发消息</button>
 </template>
 
-<script>
-import { toRefs, reactive } from 'vue'
-const state = reactive({
-    name: 'lyt',
-    age: 22
-})
+<script lang="ts">
+import { toRefs, reactive, ref, toRefs, onMounted } from 'vue'
+import Messager from './messager';
+
 export default {
     name: 'toRefs',
     setup() {
-        setTimeout(()=> {
-            state.age = 21
-        }, 1500)
-        return toRefs(state)
+        const messager = reactive(new Messager());
+        messager.onMessage();
+
+        function sendMessage() {
+            messager.sendMessage();
+        }
+        return { messager, sendMessage }
     }
 }
 </script>

@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "vue": "^3.0.4",
-    "vue-router": "^3.5.2"
+    "vue-router": "4.0.0-beta.13",
+    "wangeditor": "^4.7.8"
   },
   "devDependencies": {
     "sass": "^1.22.10",

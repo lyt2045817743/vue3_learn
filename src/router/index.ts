@@ -1,6 +1,8 @@
+// import ToRefs from '../pages/toRefs/toRefs';
+
 const routes = [{
     path: '/',
-    components: () => import("../pages/tempFile/temp.vue")
+    // component: ToRefs
 }]
 
 export default routes
