@@ -1,8 +1,9 @@
 // import ToRefs from '../pages/toRefs/toRefs';
+const Home = () =>  import('../pages/Home/index.vue');
 
 const routes = [{
     path: '/',
-    // component: ToRefs
+    component: Home
 }]
 
 export default routes
